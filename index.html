@@ -1,0 +1,38 @@
+<!--Name: Kshitij Chaudhary
+    Student ID: c0920457
+    Date: February 28, 2024
+    Project Name: WeatherApp
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--Main container for the entire application-->
+    <div class="container">
+
+        <h1>Weather App</h1>
+
+        <!-- Container for the search input and button -->
+        <div class="search-container">
+            <input type="text" id="cityInput" placeholder="Enter city name: Eg. Sarnia, Sydney, Toronto">
+            <button type= "submit" id = "searchBtn">Search</button>
+            <div id="error"></div>
+        </div>
+        
+        <!-- Loading spinner during API requests -->
+        <div id="loading" class="hidden">
+            <img src="loading.gif" alt="Loading...">
+        </div>
+        
+        <!-- Container for displaying weather information -->
+        <div id="weatherInfo" class="weather-info hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/*Name: Kshitij Chaudhary
+    Student ID: c0920457
+    Date: February 28, 2024
+    Project Name: WeatherApp
+*/
+
+/* Styles for the entire page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F2E7;
+    color: #333;
+    transition: background-color 0.5s;
+}
+
+/* Styles for the main container */
+.container {
+    max-width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #93C831;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #2F849E;
+    margin-bottom: 20px;
+}
+
+/* Styles for the search container */
+.search-container {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+/* Styles for the text input */
+input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border-radius: 6px;
+    border: 5px solid #ccc;
+}
+
+/* Styles for the search button */
+button {
+    padding: 10px 20px;
+    background-color: #F29A0A;
+    color: #fff;
+    border-radius: 6px;
+    border: 5px solid #1F251E;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto;
+}
+button:hover {
+    background-color: #2F849E;
+}
+
+/* Styles for the loading spinner */
+#loading {
+    margin-top: 20px;
+}
+
+#loading img {
+    width: 200px;
+}
+
+/* Styles for the weather information container */
+.weather-info {
+    display: none;
+    width: 400px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #A2BBA1;
+}
+.weather-info.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.info-msg {
+    color: #555;
+    font-style: italic;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.weather-description {
+    font-weight: bold;
+    color: #333;
+}
+
+.temperature {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    color: #2F849E;
+    font-weight: bold;
+}
+
+.weather-description {
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.humidity {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* Styles for error messages */
+.error-msg {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
